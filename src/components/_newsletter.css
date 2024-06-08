@@ -34,9 +34,15 @@
     border: 1px solid #E6E6E6;
     border-radius: 4px;
 
-    color: #737373;
+    color: var(--text-tertiary);
     font-size: 14px;
     line-height: 20px; 
+}
+
+.input__field:focus {
+    /* focus-rings/ring-brand-shadow-xs */
+    box-shadow: 0px 0px 0px 1px #444CE7, 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
+    outline: none;
 }
 
 .newsletter__form {
@@ -59,6 +65,17 @@
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+.btn--primary:hover { 
+    background: #3730A3;
+    /* shadow / shadow */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.btn--primary:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
 }
 
 @media only screen and (max-width: 768px) {
