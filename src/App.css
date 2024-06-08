@@ -1,6 +1,20 @@
-
 :root {
   --text-primary: #171717;
   --text-secondary: #525252;
-  --background-brand-primary: #4338CA;
+  --text-tertiary: #737373;
+  --background-brand-primary: #4338ca;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  padding: 96px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

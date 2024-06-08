@@ -1,7 +1,9 @@
 .newsletter {
     display: flex;
     justify-content: space-between;
-    padding: 96px 96px 64px;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
 }
 
 .newsletter__content {
@@ -57,4 +59,14 @@
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter__content {
+        margin-bottom: 20px;
+    }
 }
